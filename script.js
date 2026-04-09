@@ -1,4 +1,3 @@
-// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -7,7 +6,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll animation FIXED
 const cards = document.querySelectorAll('.project-card');
 
 function showCards() {
@@ -23,6 +21,5 @@ function showCards() {
     });
 }
 
-// Run on scroll + on load
 window.addEventListener('scroll', showCards);
 window.addEventListener('load', showCards);
